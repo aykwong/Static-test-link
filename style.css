@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/tic-tac-toe/tic-tac-toe.png");
+    background-color: #f5f3f3;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+    padding-bottom: 100px;
+}
+
+h1, h2 {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+.container {
+    max-width: 964px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+header {
+    margin-top: 5%;
+    background-color: #ffffff;
+    border-bottom: 3px solid #dddddd;
+}
+
+h1 {
+    display: inline-block;
+    padding: 25px;
+    font-size: 30pt;
+    color: #ffffff;
+    background-color: #4aaaa5;
+    font-weight: bold;
+}
+
+/*line-height used to adjust the top-bottom spacing of the navigation buttons due to the font size of h1 in the same inline*/
+.navigation {
+    float: right;
+    /* border: 1px solid red; */
+    line-height: 88px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #777777;
+    font-weight: 500;
+}
+
+/*nth-child applies css on #-child following the parent*/
+/*used to apply borders, but reducing class assignment*/
+.navigation a:nth-child(1) {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.navigation a:nth-child(2) {
+    padding-left: 15px;
+    padding-right: 15px;
+    border-left: 1px solid #dddddd;
+}
+
+.navigation a:nth-child(3) {
+    padding-left: 15px;
+    padding-right: 15px;
+    border-left: 1px solid #dddddd;
+}
+
+/*Changes the background color of the navigation bars on mouse hover*/
+.navigation a:hover {
+    background-color: #4aaaa5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #ffffff;
+}
+
+h2 {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 30px;
+    margin-left: 25px;
+    margin-right: 25px;
+    color: #4aaaa5;
+    font-weight: bold;
+    border-bottom: 3px solid #dddddd;
+}
+
+/*overflow used to wrap all content within container across multiple pages*/
+#contentHeader {
+    margin-top: 50px;
+    border: 2px solid #dddddd;
+    overflow: auto;
+    padding-bottom: 20px;
+}
+
+/*margin-bottom pulls the bio to appropriate spaceing*/
+#profilePicture {
+    float: left;
+    margin: 25px;
+    margin-bottom: 0px;
+    max-width: 100%;
+    height: auto;
+}
+
+/*margin-bottom pulls the container back because of line-height adjustment*/
+.bio p {
+    margin: 20px;
+    margin-bottom: 0px;
+    line-height: 200%;
+}
+
+/*position:fixed creates sticky footer*/
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: #666666;
+    border-top: 7px solid #4aaaa5;
+    text-align: center;
+    color: #dddddd;
+}
+
+footer p {
+    padding-top: 50px;
+}
+
+/* Contact.html specifics */
+
+form {
+    margin-left: 25px;
+    margin-right: 28px;
+    padding-bottom: 10px;
+}
+
+form p {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    padding-bottom: 0;
+}
+
+/*Targeting the input boxes to pull to width of container less margins*/
+input[type=text] {
+    width: 100%;
+}
+
+/*Targeting the message area*/
+textarea {
+    width: 100%;
+    height: 175px;
+}
+
+input[type=submit] {
+    display: block;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    padding: 10px 30px 10px;
+    margin-top: 20px;
+    border: none;
+}
+
+/* Portfolio.html specifics */
+
+
+.project {
+    position: relative;
+    float: left;
+    margin: 25px;
+    opacity: 0.65;
+    /*Controls speed of opacity change*/
+    transition: opacity 1.5s;
+}
+
+/*Fades in and out the images on mouse hover*/
+.project:hover {
+    opacity: 1.0;
+}
+
+.project img {
+    width: 300px;
+    height: 230px;
+}
+
+/*Position: absolute so the order of html can be ignored and text can flow into the image dimensions*/
+.description {
+    position: absolute;
+    width: 100%;
+    color: #ffffff;
+    background-color: #4aaaa5;
+    bottom: 15px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
